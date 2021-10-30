@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E52E6DAB-A1C9-4746-B116-77D15CC32470}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QLTHUVIEN</RootNamespace>
+    <AssemblyName>QLTHUVIEN</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Connection.cs" />
+    <Compile Include="frmphieumuon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmphieumuon.Designer.cs">
+      <DependentUpon>frmphieumuon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmQLTTDocGia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQLTTDocGia.Designer.cs">
+      <DependentUpon>frmQLTTDocGia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmQuantringuoidung.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQuantringuoidung.Designer.cs">
+      <DependentUpon>frmQuantringuoidung.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTKBC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTKBC.Designer.cs">
+      <DependentUpon>frmTKBC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Object\doituongthuthu.cs" />
+    <Compile Include="RPphansachtheoloai.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPphansachtheoloai.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="frmCapnhatloaisach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCapnhatloaisach.Designer.cs">
+      <DependentUpon>frmCapnhatloaisach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDangNhap.designer.cs">
+      <DependentUpon>frmDangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMuontrasach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMuontrasach.Designer.cs">
+      <DependentUpon>frmMuontrasach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmQuanlythongtinsach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQuanlythongtinsach.Designer.cs">
+      <DependentUpon>frmQuanlythongtinsach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmThongtincanhan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThongtincanhan.designer.cs">
+      <DependentUpon>frmThongtincanhan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTIMKIEM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTIMKIEM.Designer.cs">
+      <DependentUpon>frmTIMKIEM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Object\docgiaObj.cs" />
+    <Compile Include="Object\phanloaiObj.cs" />
+    <Compile Include="Object\phieumuonObj.cs" />
+    <Compile Include="Object\sachObj.cs" />
+    <Compile Include="frmHeThong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHeThong.Designer.cs">
+      <DependentUpon>frmHeThong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="frmDoiMatKhau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDoiMatKhau.Designer.cs">
+      <DependentUpon>frmDoiMatKhau.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="RPphansachtheoSLM.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPphansachtheoSLM.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RPphieumuon.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPphieumuon.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="xuly.cs" />
+    <EmbeddedResource Include="frmphieumuon.resx">
+      <DependentUpon>frmphieumuon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQLTTDocGia.resx">
+      <DependentUpon>frmQLTTDocGia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQuantringuoidung.resx">
+      <DependentUpon>frmQuantringuoidung.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTKBC.resx">
+      <DependentUpon>frmTKBC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPphansachtheoloai.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPphansachtheoloai.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCapnhatloaisach.resx">
+      <DependentUpon>frmCapnhatloaisach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDangNhap.resx">
+      <DependentUpon>frmDangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHeThong.resx">
+      <DependentUpon>frmHeThong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMuontrasach.resx">
+      <DependentUpon>frmMuontrasach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQuanlythongtinsach.resx">
+      <DependentUpon>frmQuanlythongtinsach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmThongtincanhan.resx">
+      <DependentUpon>frmThongtincanhan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTIMKIEM.resx">
+      <DependentUpon>frmTIMKIEM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDoiMatKhau.resx">
+      <DependentUpon>frmDoiMatKhau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPphansachtheoSLM.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPphansachtheoSLM.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPphieumuon.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPphieumuon.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alan_f_Eiffel Tower _akJhSQ.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sach.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\security.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_logout.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\top-10-thu-vien-noi-tieng-the-gioi-hinh-6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tải xuống.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
